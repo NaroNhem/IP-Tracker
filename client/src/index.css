@@ -47,12 +47,11 @@ button:active {
 input {
   width: 100%;
   padding: 15px 20px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
   border: none;
   outline: none;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .arrowRight {
@@ -85,15 +84,19 @@ input {
 .infoContainer > div {
   padding: auto;
   width: 100%;
-  padding-left: 5rem;
+  padding: 3rem;
+  text-align: center;
 }
 .line {
   border-right: solid black 1px;
 }
 
-.map {
-  background-color: black;
+.leaflet-container {
+  height: 74vh;
+  z-index: 1;
+}
+
+form {
   width: 100%;
-  color: white;
-  height: 75vh;
+  border-radius: 10px;
 }
