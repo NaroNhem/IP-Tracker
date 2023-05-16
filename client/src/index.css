@@ -74,6 +74,7 @@ input {
   top: 22%;
   background: white;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .infoContainer > div > p {

@@ -10,9 +10,6 @@ export default function Search(props) {
             onInput={(e) => props.getIp(e.target.value)}
           />
         </form>
-        <button onClick={props.submit}>
-          <p className="arrowRight"></p>
-        </button>
       </div>
     </div>
   );
