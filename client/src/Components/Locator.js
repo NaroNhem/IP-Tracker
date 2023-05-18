@@ -13,8 +13,10 @@ const ChangeView = ({ center, zoom }) => {
   map.setView(center, zoom);
   return null;
 };
+
 export default function Locator(props) {
   const { lat, lng } = props;
+  console.log(lat, lng);
   return (
     <MapContainer center={[37.40599, -122.078514]} zoom={13}>
       <ChangeView center={[lat, lng]} zoom={13} />
@@ -22,7 +24,7 @@ export default function Locator(props) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[37.40599, -122.078514]} icon={customIcon}></Marker>
+      <Marker position={[lat, lng]} icon={customIcon}></Marker>
     </MapContainer>
   );
 }

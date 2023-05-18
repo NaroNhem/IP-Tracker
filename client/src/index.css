@@ -51,7 +51,7 @@ input {
   outline: none;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .arrowRight {
@@ -98,6 +98,7 @@ input {
 }
 
 form {
+  display: flex;
   width: 100%;
   border-radius: 10px;
 }
